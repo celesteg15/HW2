@@ -359,11 +359,11 @@ public class BinaryTree {
         int[] nodeLeft = averageHelper(n.left);
         int[] nodeRight = averageHelper(n.right);
 
-        int SUM = nodeLeft[0] + right[0] + n.data; //'sum' returned to index 0
+        int SUM = nodeLeft[0] + nodeRight[0] + n.data; //'sum' returned to index 0
         int COUNT = nodeLeft[1] + nodeRight[1] + 1;
 
 
-        return new int[] {sum, count};
+        return new int[] {SUM, COUNT};
         // returning sum and count as an array 
     }
 }
