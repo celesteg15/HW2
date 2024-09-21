@@ -352,6 +352,9 @@ public class BinaryTree {
         // COUNT LOCATIONS IN THE RETURNED ARRAY AS SHOWN BELOW, ELSE
         // THE 'SUM' IS RETURNED IN INDEX LOCATION 0, AND COUNT IS LOCATION 1
 
-        return new int[]{0, 0};
+        if (node = null){
+                return new int[]{0, 0};
+
+        }
     }
 }
